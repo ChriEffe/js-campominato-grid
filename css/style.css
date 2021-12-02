@@ -54,7 +54,6 @@ main  {
 .container  {
     height: 600px;
     width: 600px;
-    background-color: blue;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -65,9 +64,23 @@ main  {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(100% / 8);
-    height: calc(100% / 8);
     border: 2px solid black;
+    cursor: pointer;
+}
+
+.hidden  {
+    display: none;
+}
+
+.hidden.active  {
+    display: block;
+}
+
+.grid  {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* footer */
